@@ -1,0 +1,120 @@
+@media screen and (min-width:640px){
+     .container .content header{
+        
+        .header-logo{
+           width: fit-content;
+           order: 0;
+           padding-left:0.63em ;
+        }
+        .header-info{
+            width: fit-content;
+            order: 2;
+            column-gap:10px ;
+            margin-right: auto;
+            .header-img{
+                column-gap: 8px;
+               p{
+                display: block;
+
+               } 
+            }
+        }
+        .header-status{
+            width: fit-content;
+            order:1 ;
+        
+        }
+     }
+}
+@media screen and (min-width:768px){
+
+.container {  
+    margin-top: 0;
+    width: 100%;
+    display: grid;
+  grid-template-columns: 0.15fr 1.9fr;
+  grid-template-rows: 0.45fr 1.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "nav content"
+    "nav content";
+}
+nav { grid-area: nav; }
+
+.container .content { 
+    grid-area: content;
+    padding: 32px;
+}
+  
+.container .content header{
+        font-size: 20px;
+        padding: 1.2em;
+        .header-logo{
+            .logo-name{
+                h1{
+                    font-size: 1.8em;
+                    line-height: 1.12em;
+                }
+                
+            }
+        }
+        .header-info{
+            .header-notifications{
+                .notify{
+                    i{
+                     font-size:0.8em ;}
+                    .fa-bell::after{
+                        font-size: 0.6em;
+                        width:1.5em ;
+                        height:1.5em ;
+                    }
+                
+                }
+            }
+          .header-img{
+            column-gap: 15px;
+            align-items: center;
+            .img-info{
+                align-items: center;
+            span{
+                display: inline;
+            }
+            p{
+                font-size: 0.7em;
+            }
+        }
+          }  
+        }
+        .header-status{
+            padding: 0.4em 0.6em;
+        }
+    }
+    .container .content .balance{
+        display: flex;
+        font-size: 16px;
+        justify-content: space-between;
+        column-gap: 1.4em;
+         .current-balance ,.income ,.expensess{
+            width: 33%;
+            padding:2em ;
+            margin-top:2.25em ;
+           h2{
+            font-size:1.5em ;
+            line-height: 1.34em;
+           }
+         }
+    }
+ }
+ @media screen and (min-width:1024px){
+      .container .content .balance{
+       .current-balance ,.income ,.expensess{
+            h2{
+                font-size: 2.25em;
+                line-height:1.12em ;
+            }
+         }
+      }
+
+ }
+
+
